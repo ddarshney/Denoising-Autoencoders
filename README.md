@@ -24,16 +24,16 @@ Image denoising is required to suppress noise from noise-contaminated images,and
 Autoencoders are a type of Artificial Neural Networks that are used to perform a task of data encoding (representation learning).
 Autoencoders use same input data for input as well as output, crazy right?
 
-![intuition](/img/AutoencoderDenoising.png?raw=true "Title")
+![image](https://user-images.githubusercontent.com/68664921/148659340-ad7b260d-e8ca-4ed1-b972-3e7a30920278.png)
+
 
 ### Code Layer
 Autoencoders work by adding a bottleneck in the network.
 This bottleneck forces the network to create a compressed (encoded) version of the original input.
 Autoencoders work well if correlations exist between input data and (performs poorly if all the input data is independent).
 
-Great reference: “Intro to Autoencoders by Jeremy Jordan”
 
-![Code layer](/img/AutoencoderDenoising2.png)
+![image](https://user-images.githubusercontent.com/68664921/148659354-d7018490-b242-47d6-a69d-5a02127dafa2.png)
 
 ### Math behind Autoencoder
 Encoder: ``` h(x) = sigmoid (W * x + b) ```
