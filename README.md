@@ -6,7 +6,7 @@ Image denoising is required to suppress noise from noise-contaminated images,and
 
  ![image](https://user-images.githubusercontent.com/68664921/148658793-b59db98d-ec9b-4535-9b57-341600302a3f.png)
  
- ## Overview
+ ## 💎Overview
 - Import Key libraries, dataset and visualize images
 - Perform image normalization, pre-processing, and add random noise to images
 - Build an Autoencoder using Keras with Tensorflow 2.0 as a backend
@@ -99,6 +99,8 @@ Follow the steps in the notebook if you want to train your own or you can simply
 This is a side-by-side comparison of the input images with added noise and the reconstructed output from the network.
 
 ![output](/Images/AutoencoderDenoising5.png)
+
+![image](https://user-images.githubusercontent.com/68664921/148659746-c7887ab3-843b-4f70-ac7d-f413fc1a503b.png)
 
 
 ## References to study in detail about related topics
