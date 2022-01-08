@@ -28,7 +28,7 @@ Autoencoders use same input data for input as well as output, crazy right?
 
 
 ### Code Layer
-Autoencoders work by adding a bottleneck in the network.
+Autoencoders work by adding a bottleneck in the network. 
 This bottleneck forces the network to create a compressed (encoded) version of the original input.
 Autoencoders work well if correlations exist between input data and (performs poorly if all the input data is independent).
 
@@ -40,12 +40,12 @@ Encoder: ``` h(x) = sigmoid (W * x + b) ```
 
 Decoder: ``` x̂ = sigmoid (W* * h(x) + c) ```
 
-![math](/img/AutoencoderDenoising3.png)
+![math](/Images/AutoencoderDenoising3.png)
 
 ### Reconstruction Error
 Autoencoders objective is to minimize the reconstruction error which is the difference between the input X and the network output X̂. 
 
-![reconstruction](/img/AutoencoderDenoising4.png)
+![reconstruction](/Images/AutoencoderDenoising4.png)
 
 
 
@@ -54,7 +54,7 @@ Autoencoders dimensionality reduction (latent space) is quite similar to PCA (Pr
 
  ## Possible Approaches
 
-Traditional approaches for performing denoising include methods like 
+Traditional approaches for performing denoising include methods like :
 
 1. **Gaussian blur**: In Gaussian Blur operation, we take a pixel as the average value of its neighboring pixels. The Gaussian filter is a non-uniform low pass filter that removes the high-frequency components and details.
 2. **Average blur**: During this operation, the image is convolved with a box filter. In this process, the central element of the image is replaced by the average of all the pixels in the kernel area.
@@ -98,7 +98,7 @@ Follow the steps in the notebook if you want to train your own or you can simply
 
 This is a side-by-side comparison of the input images with added noise and the reconstructed output from the network.
 
-![output](/img/AutoencoderDenoising5.png)
+![output](/Images/AutoencoderDenoising5.png)
 
 
 ## References to study in detail about related topics
