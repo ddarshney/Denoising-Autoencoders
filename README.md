@@ -1,4 +1,4 @@
-# Denoising-Autoencoders
+# 💎 Denoising-Autoencoders 💎
 
 Due to advancement in technology we might have a large amount of the data but there is always concern about the usability. For example, in medical images like X-rays, MRI, CT scans, Ultrasound, etc., when original images are put in the paper, the quality degrades, due to which the accuracy of the decision model degrades. These images are susceptible to noise.
 
@@ -6,28 +6,28 @@ Image denoising is required to suppress noise from noise-contaminated images,and
 
  ![image](https://user-images.githubusercontent.com/68664921/148658793-b59db98d-ec9b-4535-9b57-341600302a3f.png)
  
- ## �✨Overview
+ ## ✨ Overview
 - Import Key libraries, dataset and visualize images
 - Perform image normalization, pre-processing, and add random noise to images
 - Build an Autoencoder using Keras with Tensorflow 2.0 as a backend
 - Compile and fit Autoencoder model to training data 
 - Assess the performance of trained Autoencoder using various KPIs 
 
-## 💎Prerequisites
+## ✨ Prerequisites
 - Basic programming experience in python
 - Basic understanding of Tensorflow
 - Working knowledge of Machine Learning and Deep Learning
 
-## 💎Understanding the theory 
+## 💎 Understanding the theory 
 
-### 💎Autoencoder Intuition
+### 💎 Autoencoder Intuition
 Autoencoders are a type of Artificial Neural Networks that are used to perform a task of data encoding (representation learning).
 Autoencoders use same input data for input as well as output, crazy right?
 
 ![image](https://user-images.githubusercontent.com/68664921/148659340-ad7b260d-e8ca-4ed1-b972-3e7a30920278.png)
 
 
-### ⭐Code Layer
+### ⭐ Code Layer
 Autoencoders work by adding a bottleneck in the network. 
 This bottleneck forces the network to create a compressed (encoded) version of the original input.
 Autoencoders work well if correlations exist between input data and (performs poorly if all the input data is independent).
@@ -35,14 +35,14 @@ Autoencoders work well if correlations exist between input data and (performs po
 
 ![image](https://user-images.githubusercontent.com/68664921/148659354-d7018490-b242-47d6-a69d-5a02127dafa2.png)
 
-### ⭐Math behind Autoencoder
+### ⭐ Math behind Autoencoder
 Encoder: ``` h(x) = sigmoid (W * x + b) ```
 
 Decoder: ``` x̂ = sigmoid (W* * h(x) + c) ```
 
 ![math](/Images/AutoencoderDenoising3.png)
 
-### ⭐Reconstruction Error
+### ⭐ Reconstruction Error
 Autoencoders objective is to minimize the reconstruction error which is the difference between the input X and the network output X̂. 
 
 ![reconstruction](/Images/AutoencoderDenoising4.png)
@@ -52,7 +52,7 @@ Autoencoders objective is to minimize the reconstruction error which is the diff
 Autoencoders dimensionality reduction (latent space) is quite similar to PCA (Principal Component Analysis) if linear activation functions are used.
 
 
- ## 📕Possible Approaches
+ ## 📕 Possible Approaches
 
 Traditional approaches for performing denoising include methods like :
 
@@ -63,12 +63,12 @@ Traditional approaches for performing denoising include methods like :
 
 To measure the quality of the obtained images using different approaches and compare them with our method, we use what is known as the **PSNR (Peak signal-to-noise ratio)**. It is the ratio between the original noiseless image and the error in the image that is first corrupted and then denoised using the particular algorithm. The higher the PSNR value, the better the quality of the reconstructed image as it has a higher **Signal Noise ratio**. 
 
-## 📕Methodology-
+## 💎 Methodology-
 
 ### Introduction of noise for creating training set-
 In order to create the training set, we purposely corrupt the images by adding noise to them stochastically with a random normal distribution having a mean of 0 and standard deviation of 1 with a multiplying factor of 0.07 as the dataset by default contains images without noise. This is done to stimulate the noise which can occur in medical images due to the reasons mentioned in the previous section. The dataset is a compilation of CT scan images meant for studying COVID-19, but we are using it for the purpose of demonstrating denoising.
 
-### 📕Denoising using Autoencoder
+### 📕 Denoising using Autoencoder
 
 - Autoencoder is a type of unsupervised learning technique that uses artificial neural networks for the task of representation learning. An autoencoder is made up of two parts-
 - Encoder- It accepts the input data and maps it to a latent space, which is a compressed form of the data, using deterministic mapping. 
@@ -79,7 +79,7 @@ Accept input data (corrupted medical images in this case)
 It then internally compresses the data into a hidden space representation
 Finally, it tries to reconstruct the original data from that hidden representation.
 
-## 🖥️Installing
+## 🖥️ Installing
 
 A step by step series of examples that tell you how to get a development env running
 
@@ -94,7 +94,7 @@ Open ``` jupyter notebook ``` on your local host or you can use Google Colab too
 ### Step 3
 Follow the steps in the notebook if you want to train your own or you can simply run the notebook in this repo.
 
-## ✨Output
+## ✨ Output
 
 This is a side-by-side comparison of the input images with added noise and the reconstructed output from the network.
 
@@ -103,7 +103,7 @@ This is a side-by-side comparison of the input images with added noise and the r
 ![image](https://user-images.githubusercontent.com/68664921/148659746-c7887ab3-843b-4f70-ac7d-f413fc1a503b.png)
 
 
-## ✨References to study in detail about related topics
+## ✨ References to study in detail about related topics
 * [Autoencoders](https://towardsdatascience.com/applied-deep-learning-part-3-autoencoders-1c083af4d798)
 * [Deep Learning](https://www.datacamp.com/community/tutorials/deep-learning-python)
                        
