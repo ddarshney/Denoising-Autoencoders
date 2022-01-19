@@ -20,7 +20,7 @@ Image denoising is required to suppress noise from noise-contaminated images,and
 
 ## 💎 Understanding the theory 
 
-### 💎 Autoencoder Intuition
+### ✨ Autoencoder Intuition
 Autoencoders are a type of Artificial Neural Networks that are used to perform a task of data encoding (representation learning).
 Autoencoders use same input data for input as well as output, crazy right?
 
